@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title> Galvanize Delivers</title>
+</head>
+
+<body>
+  <!-- navigation -->
+  <div class="navbar-fixed">
+    <nav class="blue darken-2" role="navigation">
+      <div class="nav-wrapper"><a id="logo-container" href="index.html" class="brand-logo">Galvanize Delivers</a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="order.html">Order Delivery</a></li>
+        </ul>
+
+        <ul id="nav-mobile" class="side-nav">
+          <li><a href="index.html">Navbar Link</a></li>
+        </ul>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+      </div>
+    </nav>
+  </div>
+<!-- menu -->
+  <br></br>
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m8" id="menu">
+        <h4>Menu</h4>
+        <div class="row">
+          <div class="col s12 m6">
+            <div class="card" id="main-card">
+              <div class="card-image">
+                <img src="img/burger.jpg">
+              </div>
+              <div class="card-content">
+                <h5>Royale w/ Cheese</h5>
+                <br></br>
+                <p>$7.99</p>
+              </div>
+              <div class="card-action">
+                <a href="#/" class="red-text darken-1" id="button">Add To Order</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m6">
+            <div class="card" id="main-card">
+              <div class="card-image">
+                <img src="img/pizza.jpg">
+              </div>
+              <div class="card-content">
+                <h5>Arugula Pie</h5>
+                <br></br>
+                <p>$11.99</p>
+              </div>
+              <div class="card-action">
+                <a href="#/" class="red-text darken-1" id="button">Add To Order</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12 m6">
+            <div class="card" id="main-card">
+              <div class="card-image">
+                <img src="img/ribs.jpg">
+              </div>
+              <div class="card-content">
+                <h5>Smoked Swine</h5>
+                <br></br>
+                <p>$14.99</p>
+              </div>
+              <div class="card-action">
+                <a href="#/" class="red-text darken-1" id="button">Add To Order</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m6">
+            <div class="card" id="main-card">
+              <div class="card-image">
+                <img src="img/ice_cream.jpg">
+              </div>
+              <div class="card-content">
+                <h5>Ice Cream Biscuit</h5>
+                <br></br>
+                <p>$7.99</p>
+              </div>
+              <div class="card-action">
+                <a href="#/" class="red-text darken-1" id="button">Add To Order</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- order list -->
+    <div class="col s12 m4">
+      <div class="row">
+        <div class="col s12 m12">
+          <h4>Order</h4>
+            <table class="striped">
+              <thead>
+                <tr>
+                  <th data-field="id">Item</th>
+                  <th data-field="price">Price</th>
+                </tr>
+              </thead>
+              <tbody class="table-body">
+              </tbody>
+            </table>
+          </div>
+        </div>
+<!-- subtotal -->
+        <div class="row">
+          <div id="subtotal">
+          <div class="col s9 m9">
+            <p class="right">Subtotal</p>
+          </div>
+          <div class="col s3 m3">
+            <p>$0.00</p>
+          </div>
+        </div>
+  <!-- tax -->
+          <div class="col s9 m9">
+            <p class="right">Tax</p>
+          </div>
+          <div class="col s3 m3">
+            <p>$0.00</p>
+          </div>
+  <!-- total -->
+          <div class="col s9 m9">
+            <p class="right">Total</p>
+          </div>
+          <div class="col s3 m3">
+            <p>$0.00</p>
+          </div>
+        </div>
+<!-- contact form -->
+        <div class="row">
+          <form>
+            <div class="input-field col s12 m12 red-text">
+              <i class="material-icons prefix">account_circle</i>
+              <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+              <label for="icon_prefix2">Name</label>
+            </div>
+            <div class="input-field col s12 m12 red-text">
+              <i class="material-icons prefix">phone</i>
+              <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+              <label for="icon_prefix2">Phone Number</label>
+            </div>
+            <div class="input-field col s6 m12 red-text">
+              <i class="material-icons prefix">business</i>
+              <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+              <label for="icon_prefix2">Address</label>
+            </div>
+            <div class="center-align">
+              <button class="btn waves-effect waves-light red darken-1" type="submit" name="action">Place Order
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br></br>
+  <br></br>
+  <footer class="page-footer blue darken-2">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Galvanize Delivers</h5>
+          <p class="grey-text text-lighten-4">Fine Dining, Delivered.</p>
+
+
+        </div>
+        <div class="col l3 s12"></div>
+        <div class="col l3 s12">
+          <ul>
+            <li><a class="white-text" href="index.html">Home</a></li>
+            <li><a class="white-text" href="order.html">Order Delivery</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        <p class="white-text">2016 Galvanize Delivers</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
