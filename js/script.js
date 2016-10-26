@@ -1,22 +1,24 @@
 $(document).ready(function () {
-    var subNum = 0;
+  var subNum = 0;
+  var taxRate = .08845;
+  var subtotal = $("#subtotal");
+  var tax = $("#tax");
+  var total = $("#total");
+
   $("div > #button").on("click", function (){
     var btn = $(this).parentsUntil("#card-main").children(".card-content");
     var food = $("> h5", btn).text();
     var price = $("> p", btn).text();
-    var subtotal = $("#subtotal").text();
+    var priceNum = price.slice(1);
+    //appending items to table
     $(".table-body").append("<tr><td>" + food + "</td><td>" + price + "</td></tr>");
-      var priceNum = price.slice(1);
-      priceNum = parseFloat(priceNum);
-      subNum += priceNum;
-      // console.log(priceNum + 1);
-
-    // $("#subtotal > p").text().replaceWith(price);
-    // var sub = subtotal.text() + price;
-    // subtotal.text().replaceWith(sub);
-    // subtotal.replaceWith(subNum);
-
-    // console.log(subNum);
-
+    //updating subtotal
+    priceNum = parseFloat(priceNum);
+    subNum += priceNum;
+    subtotal.html("$" + subNum.toFixed(2));
+    //updating tax
+    tax.html("$" + (subNum*taxRate).toFixed(2));
+    //updating total
+    total.html("$" + (subNum + (subNum*taxRate)).toFixed(2));
   })
 })
